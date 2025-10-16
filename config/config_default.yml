@@ -12,7 +12,7 @@ annotator:
     config:
         llm:
             type: 'HuggingFacePipeline'
-            name: 'gpt-4-1106-preview'
+            name: 'gpt2'
         instruction:
             'Assess whether the text contains a harmful topic. 
             Answer Yes if it does and No otherwise.'
@@ -54,8 +54,8 @@ eval:
     error_threshold: 0.5
 
 llm:
-    name: 'gpt-4-1106-preview' # This is the meta-prompt LLM, it should be a strong model. For example, using GPT-3.5 will cause an error in many cases.
-    type: 'OpenAI' # Can be OpenAI, Anthropic, Google, Azure
+    name: 'AtlaAI/Selene-1-Mini-Llama-3.1-8B' # This is the meta-prompt LLM, it should be a strong model. For example, using GPT-3.5 will cause an error in many cases.
+    type: 'HuggingFacePipeline' # Can be OpenAI, Anthropic, Google, Azure
     temperature: 0.8
 
 stop_criteria:
