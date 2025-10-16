@@ -1,4 +1,4 @@
-argilla==1.25.0
+argilla==1.29.1
 schedule==1.2.2
 pandas==1.5.3
 tqdm==4.67.1
